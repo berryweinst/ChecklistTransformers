@@ -36,8 +36,10 @@ pip install -e .
 ```
 + Copy and extract the suits tar file from checklist into this package
 ```
-cp -rf ../checklist/release_data.tar.gz .
+cp -rf ../checklist/release_data.tar.gz ./checklist_transformers/
+cd checklist_transformers
 tar xvzf release_data.tar.gz
+cd ../
 ```
 
  
