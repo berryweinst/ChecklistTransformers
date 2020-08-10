@@ -30,8 +30,8 @@ pip install -e .
 ```
 + Clone this package and cd to it and install 
 ```
-git clone 
-cd 
+git clone https://github.com/berryweinst/ChecklistTransformers.git
+cd ChecklistTransformers
 pip install -e .
 ```
 + Copy and extract the suits tar file from checklist into this package
@@ -53,6 +53,6 @@ For all neurons omit the --study_* flags
 The outputs of the main script are two heatmaps of the nurons. Specifically,
 the error rate on the checklist task and the confidence by score, when ablating each and one
 of the neurons by layer, timestep and neuron inside the hidden dimension. 
-Example run Jupyter notebook on a subset of all neurons can be found in [here]().
+Example run Jupyter notebook on a subset of all neurons can be found in [here](https://github.com/berryweinst/ChecklistTransformers/blob/master/checklist_transformers/Negation_example_on_subset.ipynb).
 
 
