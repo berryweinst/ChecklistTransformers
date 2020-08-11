@@ -369,12 +369,12 @@ class ChecklistQuestionAnsweringPipelineFineGraned(ChecklistQuestionAnsweringPip
                 # neu_mask = torch.zeros((batch[0].size(0), kwargs["max_seq_len"], dim)).to(self.device_type)
                 # neu_mask[:, ts, neu] = 1
                 # neu_mask = neu_mask.bool()
-                reset_cache = False
 
                 fw_args['neu_mask_layer'] = layer
                 fw_args['mask_ts'] = ts
                 fw_args['mask_neu'] = neu
                 fw_args['reset_cache'] = reset_cache
+                reset_cache = False
 
                 # Manage tensor allocation on correct device
                 with self.device_placement():
