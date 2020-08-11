@@ -42,8 +42,8 @@ tar xvzf release_data.tar.gz
 cd ../
 ```
 
- 
-Example for efficient multi-gpu run on a subset of neurons:
+## Examples
+For efficient multi-gpu run on a subset of neurons:
  ```
  python main.py --device-ids 0 1 2 3 --batch-size 1996 --study-num-layer 6 --study-num-ts 16 --study-num-neurons 32
 ```
